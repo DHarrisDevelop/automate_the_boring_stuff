@@ -5,7 +5,10 @@ def collatz(number):
     else:
         print(3*number+1)
         return 3*number+1
-
-number = int(input("Please type a valid integer: "))
-while(number != 1):
-    number = collatz(number)
+user_value = input("Please type a valid integer: ")
+try:
+    number = int(user_value)
+    while(number != 1): 
+        number = collatz(number)
+except ValueError:
+    print("Sorry old chap {} isn't a valid integer, try again eh?!?".format(user_value))

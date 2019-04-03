@@ -1,0 +1,1 @@
+Chapter 2 of Automate the Boring Stuff with Python is all about FLOW CONTROL and it had one basic code challenge. My solution to that code challenge is in collatz.py.
